@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дрова с доставкой в Саранске — Империя Поленьев</title>
+    <meta name="description" content="Качественные берёзовые, дубовые, осиновые, ольховые и хвойные дрова с доставкой по Саранску и окрестностям. Заказ от 5 м³, разгрузка на участке. Купить дрова в Саранске.">
+    <meta name="keywords" content="купить дрова в Саранске, дрова с доставкой в Саранске, берёзовые дрова в Саранске, дрова для бани, дрова для печи, доставка дров по Саранску, купить дрова с разгрузкой">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ==================== ШАПКА САЙТА ==================== -->
+<header class="header" id="header">
+    <div class="container header__inner">
+        <a href="#" class="logo">
+            <span class="logo__icon">🔥</span>
+            <span class="logo__text">Империя <em>Поленьев</em></span>
+        </a>
+        <nav class="nav" id="nav">
+            <ul class="nav__list">
+                <li><a href="#catalog" class="nav__link">Дрова</a></li>
+                <li><a href="#delivery" class="nav__link">Доставка</a></li>
+                <li><a href="#advantages" class="nav__link">Преимущества</a></li>
+                <li><a href="#howto" class="nav__link">Как заказать</a></li>
+                <li><a href="#contacts" class="nav__link">Контакты</a></li>
+            </ul>
+        </nav>
+        <a href="#order" class="btn btn--primary btn--shine header__cta">Заказать дрова</a>
+        <button class="burger" id="burger" aria-label="Открыть меню">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <!-- Затемнение фона при открытом меню -->
+    <div class="nav-overlay" id="navOverlay"></div>
+</header>
+
+<!-- ==================== ПЕРВЫЙ ЭКРАН (HERO) ==================== -->
+<section class="hero" id="hero">
+    <!-- Летающие искры (генерируются в JS) -->
+    <div class="embers" id="embers" aria-hidden="true"></div>
+    <div class="hero__glow hero__glow--1" aria-hidden="true"></div>
+    <div class="hero__glow hero__glow--2" aria-hidden="true"></div>
+
+    <div class="container hero__inner">
+        <div class="hero__content">
+            <p class="hero__slogan reveal-hero">✦ Тепло начинается с хороших дров</p>
+            <h1 class="hero__title reveal-hero" style="--d:.1s">
+                Качественные дрова<br>с&nbsp;доставкой по&nbsp;<span class="grad-text">Саранску</span>
+            </h1>
+            <p class="hero__subtitle reveal-hero" style="--d:.2s">
+                Берёзовые, дубовые, осиновые, ольховые и хвойные дрова для дома, дачи и бани.
+                Доставим сухие и качественные дрова точно в срок.
+            </p>
+            <ul class="hero__features reveal-hero" style="--d:.3s">
+                <li>Минимальный заказ — от 5 м³</li>
+                <li>Доставка по Саранску и окрестностям</li>
+                <li>Разгрузка на участке</li>
+                <li>Прозрачные цены</li>
+            </ul>
+            <div class="hero__buttons reveal-hero" style="--d:.4s">
+                <a href="#calculator" class="btn btn--primary btn--shine btn--lg">Рассчитать стоимость</a>
+                <a href="#catalog" class="btn btn--ghost btn--lg">Посмотреть каталог →</a>
+            </div>
+        </div>
+
+        <!-- Визуальный блок: поленница + пламя -->
+        <div class="hero__visual reveal-hero" style="--d:.35s">
+            <div class="visual-card">
+                <div class="visual-card__label">
+                    <span class="pulse-dot"></span> В наличии · от 3 000 ₽/м³
+                </div>
+                <div class="flame-zone">
+                    <div class="flame flame--1"></div>
+                    <div class="flame flame--2"></div>
+                    <div class="flame flame--3"></div>
+                </div>
+                <div class="wood-stack">
+                    <div class="log-row">
+                        <div class="log"><div class="log__ring"></div></div>
+                        <div class="log"><div class="log__ring"></div></div>
+                        <div class="log"><div class="log__ring"></div></div>
+                        <div class="log"><div class="log__ring"></div></div>
+                    </div>
+                    <div class="log-row log-row--offset">
+                        <div class="log"><div class="log__ring"></div></div>
+                        <div class="log"><div class="log__ring"></div></div>
+                        <div class="log"><div class="log__ring"></div></div>
+                    </div>
+                    <div class="log-row">
+                        <div class="log"><div class="log__ring"></div></div>
+                        <div class="log"><div class="log__ring"></div></div>
+                        <div class="log"><div class="log__ring"></div></div>
+                        <div class="log"><div class="log__ring"></div></div>
+                    </div>
+                    <div class="log-row log-row--offset">
+                        <div class="log"><div class="log__ring"></div></div>
+                        <div class="log"><div class="log__ring"></div></div>
+                        <div class="log"><div class="log__ring"></div></div>
+                    </div>
+                </div>
+                <div class="visual-card__footer">
+                    <div><strong>4 года</strong><span>в Саранске</span></div>
+                    <div><strong>1–2 дня</strong><span>доставка</span></div>
+                    <div><strong>5 пород</strong><span>дров на выбор</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== БЕГУЩАЯ СТРОКА ==================== -->
+<div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+        <span>🪵 Берёзовые дрова</span><span>✦</span>
+        <span>🔥 Дубовые дрова</span><span>✦</span>
+        <span>🌲 Хвойные дрова</span><span>✦</span>
+        <span>🚛 Доставка 1–2 дня</span><span>✦</span>
+        <span>💪 Разгрузка на участке</span><span>✦</span>
+        <span>🧱 Топливные брикеты</span><span>✦</span>
+        <span>🪵 Берёзовые дрова</span><span>✦</span>
+        <span>🔥 Дубовые дрова</span><span>✦</span>
+        <span>🌲 Хвойные дрова</span><span>✦</span>
+        <span>🚛 Доставка 1–2 дня</span><span>✦</span>
+        <span>💪 Разгрузка на участке</span><span>✦</span>
+        <span>🧱 Топливные брикеты</span><span>✦</span>
+    </div>
+</div>
+
+<!-- ==================== ЦИФРЫ (СЧЁТЧИКИ) ==================== -->
+<section class="stats">
+    <div class="container stats__grid">
+        <div class="stat reveal">
+            <div class="stat__value"><span data-count="4">0</span></div>
+            <div class="stat__label">года работаем<br>в Саранске</div>
+        </div>
+        <div class="stat reveal" style="--d:.1s">
+            <div class="stat__value"><span data-count="5">0</span> м³</div>
+            <div class="stat__label">минимальный<br>заказ</div>
+        </div>
+        <div class="stat reveal" style="--d:.2s">
+            <div class="stat__value"><span data-count="5">0</span></div>
+            <div class="stat__label">пород дров<br>в каталоге</div>
+        </div>
+        <div class="stat reveal" style="--d:.3s">
+            <div class="stat__value">24 ч</div>
+            <div class="stat__label">срочная доставка<br>по согласованию</div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== ПРЕИМУЩЕСТВА ==================== -->
+<section class="advantages" id="advantages">
+    <div class="container">
+        <p class="eyebrow reveal">Почему мы</p>
+        <h2 class="section-title reveal">Ваше тепло — <span class="grad-text-dark">наша забота</span></h2>
+        <p class="section-subtitle reveal">Мы работаем для жителей Саранска уже 4 года и знаем, что действительно важно</p>
+
+        <div class="advantages__grid">
+            <article class="advantage-card reveal">
+                <div class="advantage-card__icon">🏆</div>
+                <h3 class="advantage-card__title">4 года опыта</h3>
+                <p class="advantage-card__text">Работаем для жителей Саранска с 2022 года. Заслужили доверие сотен клиентов и отладили все процессы.</p>
+            </article>
+            <article class="advantage-card reveal" style="--d:.08s">
+                <div class="advantage-card__icon">🚛</div>
+                <h3 class="advantage-card__title">Доставка в удобное время</h3>
+                <p class="advantage-card__text">Привезём дрова тогда, когда удобно вам. Обычно 1–2 рабочих дня, возможна срочная доставка.</p>
+            </article>
+            <article class="advantage-card reveal" style="--d:.16s">
+                <div class="advantage-card__icon">🌳</div>
+                <h3 class="advantage-card__title">Дрова для любых задач</h3>
+                <p class="advantage-card__text">Берёза, дуб, осина, ольха, хвоя — подберём вариант для печи, камина, бани или мангала.</p>
+            </article>
+            <article class="advantage-card reveal" style="--d:.24s">
+                <div class="advantage-card__icon">💪</div>
+                <h3 class="advantage-card__title">Разгрузка на участке</h3>
+                <p class="advantage-card__text">Не нужно таскать поленья самостоятельно. Аккуратно сложим дрова в указанном месте.</p>
+            </article>
+            <article class="advantage-card reveal" style="--d:.32s">
+                <div class="advantage-card__icon">💰</div>
+                <h3 class="advantage-card__title">Честные цены</h3>
+                <p class="advantage-card__text">Понятная стоимость без сюрпризов. Вы заранее знаете цену за кубометр и доставку.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== КАТАЛОГ ДРОВ ==================== -->
+<section class="catalog" id="catalog">
+    <div class="container">
+        <p class="eyebrow reveal">Каталог</p>
+        <h2 class="section-title reveal">Выберите <span class="grad-text-dark">свои дрова</span></h2>
+        <p class="section-subtitle reveal">Для дома, дачи, бани и камина — каждая порода со своим характером</p>
+
+        <div class="catalog__grid">
+            <!-- Берёзовые -->
+            <article class="product-card reveal">
+                <div class="product-card__badge">Хит продаж</div>
+                <div class="product-card__icon">🪵</div>
+                <h3 class="product-card__title">Берёзовые дрова</h3>
+                <p class="product-card__desc">Отлично подходят для печей и каминов. Хорошо горят, дают много тепла и долго поддерживают жар.</p>
+                <div class="product-card__price">от 3 500 <span>₽/м³</span></div>
+                <a href="#order" class="btn btn--primary btn--shine product-card__btn">Заказать</a>
+            </article>
+            <!-- Дубовые -->
+            <article class="product-card product-card--dark reveal" style="--d:.08s">
+                <div class="product-card__badge">Премиум</div>
+                <div class="product-card__icon">🌳</div>
+                <h3 class="product-card__title">Дубовые дрова</h3>
+                <p class="product-card__desc">Максимальная теплоотдача. Долго горят и тлеют — лучший выбор для длительного обогрева.</p>
+                <div class="product-card__price">от 5 000 <span>₽/м³</span></div>
+                <a href="#order" class="btn btn--primary btn--shine product-card__btn">Заказать</a>
+            </article>
+            <!-- Осиновые -->
+            <article class="product-card reveal" style="--d:.16s">
+                <div class="product-card__icon">🍂</div>
+                <h3 class="product-card__title">Осиновые дрова</h3>
+                <p class="product-card__desc">Подходят для бани и очистки дымохода. Горят ровным пламенем, не выделяют смолу.</p>
+                <div class="product-card__price">от 3 200 <span>₽/м³</span></div>
+                <a href="#order" class="btn btn--primary btn--shine product-card__btn">Заказать</a>
+            </article>
+            <!-- Ольховые -->
+            <article class="product-card reveal" style="--d:.24s">
+                <div class="product-card__icon">🔥</div>
+                <h3 class="product-card__title">Ольховые дрова</h3>
+                <p class="product-card__desc">«Царские дрова» — горят без дыма, с приятным ароматом. Идеальны для бани, мангала и копчения.</p>
+                <div class="product-card__price">от 4 000 <span>₽/м³</span></div>
+                <a href="#order" class="btn btn--primary btn--shine product-card__btn">Заказать</a>
+            </article>
+            <!-- Хвойные -->
+            <article class="product-card reveal" style="--d:.32s">
+                <div class="product-card__icon">🌲</div>
+                <h3 class="product-card__title">Хвойные дрова</h3>
+                <p class="product-card__desc">Быстро разгораются, приятный хвойный аромат. Подходят для каминов, мангалов и розжига.</p>
+                <div class="product-card__price">от 3 000 <span>₽/м³</span></div>
+                <a href="#order" class="btn btn--primary btn--shine product-card__btn">Заказать</a>
+            </article>
+        </div>
+
+        <p class="catalog__note reveal">💡 Минимальный заказ — 5 м³. Итоговая стоимость зависит от вида дров, объёма и адреса доставки.</p>
+
+        <!-- Дополнительные товары -->
+        <div class="extras reveal">
+            <h3 class="extras__title">Также предлагаем</h3>
+            <div class="extras__grid">
+                <div class="extra-item">
+                    <span class="extra-item__icon">🧱</span>
+                    <span class="extra-item__name">Топливные брикеты</span>
+                </div>
+                <div class="extra-item">
+                    <span class="extra-item__icon">⚫</span>
+                    <span class="extra-item__name">Древесный уголь</span>
+                </div>
+                <div class="extra-item">
+                    <span class="extra-item__icon">🪓</span>
+                    <span class="extra-item__name">Щепа для розжига</span>
+                </div>
+                <div class="extra-item">
+                    <span class="extra-item__icon">🔥</span>
+                    <span class="extra-item__name">Растопка</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== КАЛЬКУЛЯТОР ==================== -->
+<section class="calculator" id="calculator">
+    <div class="container">
+        <p class="eyebrow eyebrow--light reveal">Калькулятор</p>
+        <h2 class="section-title section-title--light reveal">Рассчитайте стоимость <span class="grad-text">за минуту</span></h2>
+        <p class="section-subtitle section-subtitle--light reveal">Ориентировочный расчёт — точную сумму подтвердим по телефону</p>
+
+        <div class="calc-card reveal">
+            <div class="calc__form">
+                <div class="calc__field">
+                    <label for="calc-wood">Вид дров</label>
+                    <select id="calc-wood">
+                        <option value="3500">Берёзовые — 3 500 ₽/м³</option>
+                        <option value="5000">Дубовые — 5 000 ₽/м³</option>
+                        <option value="3200">Осиновые — 3 200 ₽/м³</option>
+                        <option value="4000">Ольховые — 4 000 ₽/м³</option>
+                        <option value="3000">Хвойные — 3 000 ₽/м³</option>
+                    </select>
+                </div>
+                <div class="calc__field">
+                    <label for="calc-volume">Объём: <strong id="volumeLabel">5 м³</strong> <span class="calc__hint">(минимум 5)</span></label>
+                    <input type="range" id="calc-volume" min="5" max="40" value="5" step="1">
+                    <div class="calc__range-labels"><span>5 м³</span><span>40 м³</span></div>
+                </div>
+                <div class="calc__field calc__checkbox">
+                    <label class="toggle-label">
+                        <input type="checkbox" id="calc-delivery" checked>
+                        <span class="toggle"></span>
+                        Доставка <small>от 1 500 ₽ + 300 ₽/м³</small>
+                    </label>
+                </div>
+                <div class="calc__field calc__checkbox">
+                    <label class="toggle-label">
+                        <input type="checkbox" id="calc-unload">
+                        <span class="toggle"></span>
+                        Разгрузка на участке <small>+ 1 000 ₽</small>
+                    </label>
+                </div>
+            </div>
+            <div class="calc__result">
+                <p class="calc__total-label">Примерная стоимость</p>
+                <p class="calc__total-value" id="calc-total">19 000 ₽</p>
+                <ul class="calc__breakdown" id="calc-breakdown">
+                    <li><span>Дрова</span><span id="bk-wood">17 500 ₽</span></li>
+                    <li><span>Доставка</span><span id="bk-delivery">3 000 ₽</span></li>
+                    <li><span>Разгрузка</span><span id="bk-unload">—</span></li>
+                </ul>
+                <p class="calc__warning">⚠️ Окончательная стоимость уточняется после подтверждения адреса.</p>
+                <a href="#order" class="btn btn--primary btn--shine calc__order-btn">Оформить заказ</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== ДОСТАВКА ==================== -->
+<section class="delivery" id="delivery">
+    <div class="container">
+        <p class="eyebrow reveal">Доставка</p>
+        <h2 class="section-title reveal">Доставим дрова <span class="grad-text-dark">прямо к вашему дому</span></h2>
+        <p class="section-subtitle reveal">Саранск и ближайшие окрестности</p>
+
+        <div class="delivery__info">
+            <div class="delivery__details reveal">
+                <ul class="delivery__list">
+                    <li><strong>Зона доставки:</strong> Саранск и ближайшие окрестности</li>
+                    <li><strong>Сроки:</strong> обычно 1–2 рабочих дня</li>
+                    <li><strong>Стоимость:</strong> от 1 500 ₽ (ориентировочно 300 ₽ за м³)</li>
+                    <li><strong>Срочная доставка:</strong> возможна по согласованию</li>
+                    <li><strong>Разгрузка:</strong> на вашем участке по запросу</li>
+                    <li><strong>Самовывоз:</strong> по предварительной договорённости. Адрес уточняйте при оформлении заказа</li>
+                </ul>
+                <p class="delivery__note">Точная стоимость зависит от адреса и объёма заказа. Мы всегда предупреждаем об итоговой сумме заранее.</p>
+            </div>
+
+            <!-- Пошаговая схема -->
+            <div class="delivery__steps" id="howto">
+                <h3 class="steps__title reveal">Как заказать дрова</h3>
+                <div class="step reveal">
+                    <div class="step__number">1</div>
+                    <div class="step__content">
+                        <h4>Выбираете дрова</h4>
+                        <p>Определитесь с породой и объёмом из нашего каталога.</p>
+                    </div>
+                </div>
+                <div class="step reveal" style="--d:.1s">
+                    <div class="step__number">2</div>
+                    <div class="step__content">
+                        <h4>Оставляете заявку</h4>
+                        <p>Заполните форму на сайте или позвоните нам.</p>
+                    </div>
+                </div>
+                <div class="step reveal" style="--d:.2s">
+                    <div class="step__number">3</div>
+                    <div class="step__content">
+                        <h4>Уточняем детали</h4>
+                        <p>Связываемся с вами, подтверждаем адрес и точную стоимость.</p>
+                    </div>
+                </div>
+                <div class="step reveal" style="--d:.3s">
+                    <div class="step__number">4</div>
+                    <div class="step__content">
+                        <h4>Привозим и разгружаем</h4>
+                        <p>Доставляем в назначенное время и аккуратно складываем дрова на участке.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== ФОРМА ЗАКАЗА ==================== -->
+<section class="order" id="order">
+    <div class="container">
+        <p class="eyebrow reveal">Заказ</p>
+        <h2 class="section-title reveal">Оставить <span class="grad-text-dark">заявку</span></h2>
+        <p class="section-subtitle reveal">Заполните форму — мы свяжемся с вами для подтверждения заказа</p>
+
+        <form class="order-form reveal" id="orderForm" novalidate>
+            <div class="order-form__grid">
+                <div class="form-field">
+                    <label for="order-name">Ваше имя *</label>
+                    <input type="text" id="order-name" name="name" placeholder="Иван Иванов" required>
+                    <span class="form-error" id="error-name"></span>
+                </div>
+                <div class="form-field">
+                    <label for="order-phone">Телефон *</label>
+                    <input type="tel" id="order-phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                    <span class="form-error" id="error-phone"></span>
+                </div>
+                <div class="form-field">
+                    <label for="order-wood">Вид дров *</label>
+                    <select id="order-wood" name="wood" required>
+                        <option value="">Выберите вид дров</option>
+                        <option value="birch">Берёзовые дрова</option>
+                        <option value="oak">Дубовые дрова</option>
+                        <option value="aspen">Осиновые дрова</option>
+                        <option value="alder">Ольховые дрова</option>
+                        <option value="pine">Хвойные дрова</option>
+                    </select>
+                    <span class="form-error" id="error-wood"></span>
+                </div>
+                <div class="form-field">
+                    <label for="order-volume">Объём (м³, мин. 5) *</label>
+                    <input type="number" id="order-volume" name="volume" min="5" placeholder="5" required>
+                    <span class="form-error" id="error-volume"></span>
+                </div>
+                <div class="form-field form-field--full">
+                    <label for="order-address">Адрес доставки</label>
+                    <input type="text" id="order-address" name="address" placeholder="г. Саранск, ул. ..., д. ...">
+                </div>
+                <div class="form-field">
+                    <label for="order-date">Желаемая дата доставки</label>
+                    <input type="date" id="order-date" name="date">
+                </div>
+                <div class="form-field form-field--checkbox">
+                    <label class="toggle-label">
+                        <input type="checkbox" id="order-unload" name="unload">
+                        <span class="toggle"></span>
+                        Нужна разгрузка
+                    </label>
+                </div>
+                <div class="form-field form-field--full">
+                    <label for="order-comment">Комментарий</label>
+                    <textarea id="order-comment" name="comment" rows="4" placeholder="Дополнительные пожелания..."></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn--primary btn--shine btn--lg order-form__submit">Отправить заявку</button>
+        </form>
+
+        <!-- Сообщение об успешной отправке -->
+        <div class="order-success" id="orderSuccess" style="display: none;">
+            <div class="success-icon">✅</div>
+            <h3>Спасибо! Заявка подготовлена.</h3>
+            <p>Свяжитесь с нами по телефону <strong>+7 (XXX) XXX-XX-XX</strong>, чтобы подтвердить заказ.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== ОТЗЫВЫ ==================== -->
+<section class="reviews" id="reviews">
+    <div class="container">
+        <p class="eyebrow reveal">Отзывы</p>
+        <h2 class="section-title reveal">Что говорят <span class="grad-text-dark">наши клиенты</span></h2>
+        <p class="section-subtitle reveal reviews__disclaimer">Примеры отзывов клиентов</p>
+
+        <div class="reviews__grid">
+            <article class="review-card reveal">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">«Качественные дрова, быстро договорились о доставке. Всё привезли и аккуратно разгрузили.»</p>
+                <p class="review-card__author">— Клиент из Саранска</p>
+            </article>
+            <article class="review-card reveal" style="--d:.1s">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">«Заказывали дрова для бани. Поленья хорошие, сухие, размер удобный.»</p>
+                <p class="review-card__author">— Владелец бани</p>
+            </article>
+            <article class="review-card reveal" style="--d:.2s">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">«Понравился понятный расчёт стоимости и оперативная доставка.»</p>
+                <p class="review-card__author">— Дачник</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== ЧАСТЫЕ ВОПРОСЫ ==================== -->
+<section class="faq" id="faq">
+    <div class="container">
+        <p class="eyebrow reveal">FAQ</p>
+        <h2 class="section-title reveal">Частые <span class="grad-text-dark">вопросы</span></h2>
+        <div class="faq__list">
+            <details class="faq__item reveal">
+                <summary class="faq__question">Какой минимальный объём заказа?</summary>
+                <div class="faq__answer"><p>Минимальный заказ — 5 кубометров. Это обеспечивает оптимальную стоимость доставки и удобство разгрузки.</p></div>
+            </details>
+            <details class="faq__item reveal" style="--d:.05s">
+                <summary class="faq__question">В какие районы выполняется доставка?</summary>
+                <div class="faq__answer"><p>Доставляем по Саранску и ближайшим окрестностям. Возможность доставки до вашего адреса уточняйте при оформлении заявки.</p></div>
+            </details>
+            <details class="faq__item reveal" style="--d:.1s">
+                <summary class="faq__question">Можно ли заказать разгрузку?</summary>
+                <div class="faq__answer"><p>Да, разгрузка на участке доступна по запросу — 1 000 ₽. Грузчики аккуратно сложат дрова в указанном месте.</p></div>
+            </details>
+            <details class="faq__item reveal" style="--d:.15s">
+                <summary class="faq__question">Как рассчитывается стоимость доставки?</summary>
+                <div class="faq__answer"><p>База — от 1 500 ₽, плюс ориентировочно 300 ₽ за кубометр. Итог зависит от адреса и объёма, точную сумму озвучиваем до подтверждения заказа.</p></div>
+            </details>
+            <details class="faq__item reveal" style="--d:.2s">
+                <summary class="faq__question">Можно ли оформить самовывоз?</summary>
+                <div class="faq__answer"><p>Да, самовывоз возможен по предварительной договорённости. Адрес уточняйте при оформлении заказа.</p></div>
+            </details>
+            <details class="faq__item reveal" style="--d:.25s">
+                <summary class="faq__question">Какие дрова лучше выбрать для бани?</summary>
+                <div class="faq__answer"><p>Для бани отлично подходит ольха — горит без дыма и приятно пахнет. Также популярна берёза за высокую теплоотдачу, а осину используют для очистки дымохода.</p></div>
+            </details>
+            <details class="faq__item reveal" style="--d:.3s">
+                <summary class="faq__question">Как быстро привезут заказ?</summary>
+                <div class="faq__answer"><p>Стандартная доставка — 1–2 рабочих дня. Если дрова нужны срочно, позвоните: организуем срочную доставку по согласованию.</p></div>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== КОНТАКТЫ ==================== -->
+<section class="contacts" id="contacts">
+    <div class="container">
+        <p class="eyebrow reveal">Контакты</p>
+        <h2 class="section-title reveal">Свяжитесь <span class="grad-text-dark">с нами</span></h2>
+        <div class="contacts__inner">
+            <div class="contacts__info reveal">
+                <div class="contact-item">
+                    <span class="contact-item__icon">📞</span>
+                    <div>
+                        <h3>Телефон</h3>
+                        <a href="tel:+7XXXXXXXXXX" class="contact-item__value">+7 (XXX) XXX-XX-XX</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-item__icon">📍</span>
+                    <div>
+                        <h3>Город</h3>
+                        <p class="contact-item__value">Саранск и ближайшие окрестности</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-item__icon">🕐</span>
+                    <div>
+                        <h3>Режим работы</h3>
+                        <p class="contact-item__value">Ежедневно с 08:00 до 20:00</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-item__icon">🏭</span>
+                    <div>
+                        <h3>Самовывоз</h3>
+                        <p class="contact-item__value">Адрес уточняется при оформлении заказа</p>
+                    </div>
+                </div>
+                <div class="contacts__buttons">
+                    <a href="tel:+7XXXXXXXXXX" class="btn btn--primary btn--shine">Позвонить</a>
+                    <a href="#order" class="btn btn--dark-outline">Заказать доставку</a>
+                </div>
+            </div>
+
+            <!-- Визуальный блок карты -->
+            <div class="contacts__map reveal" style="--d:.15s">
+                <div class="map-placeholder">
+                    <div class="map-placeholder__grid" aria-hidden="true"></div>
+                    <div class="map-placeholder__circle map-placeholder__circle--1"></div>
+                    <div class="map-placeholder__circle map-placeholder__circle--2"></div>
+                    <div class="map-placeholder__circle map-placeholder__circle--3"></div>
+                    <div class="map-placeholder__pin">📍</div>
+                    <p class="map-placeholder__text">Саранск<br>и ближайшие окрестности</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== ПОДВАЛ ==================== -->
+<footer class="footer">
+    <div class="container footer__inner">
+        <div class="footer__brand">
+            <span class="logo__text">Империя Поленьев</span>
+            <p>Тепло начинается с хороших дров</p>
+        </div>
+        <div class="footer__links">
+            <a href="#catalog">Каталог</a>
+            <a href="#delivery">Доставка</a>
+            <a href="#calculator">Калькулятор</a>
+            <a href="#contacts">Контакты</a>
+        </div>
+        <p class="footer__copy">&copy; 2022–2026 «Империя Поленьев». Все права защищены. Информация на сайте не является публичной офертой.</p>
+    </div>
+</footer>
+
+<!-- Кнопка «Наверх» -->
+<button class="to-top" id="toTop" aria-label="Наверх">↑</button>
+
+<!-- ==================== СКРИПТЫ ==================== -->
+<script>
+    /* === Мобильное меню === */
+    const burger = document.getElementById('burger');
+    const nav = document.getElementById('nav');
+    const navOverlay = document.getElementById('navOverlay');
+
+    function toggleMenu() {
+        nav.classList.toggle('nav--open');
+        burger.classList.toggle('burger--active');
+        navOverlay.classList.toggle('nav-overlay--visible');
+        document.body.style.overflow = nav.classList.contains('nav--open') ? 'hidden' : '';
+    }
+
+    burger.addEventListener('click', toggleMenu);
+    navOverlay.addEventListener('click', toggleMenu);
+    document.querySelectorAll('.nav__link').forEach(link => {
+        link.addEventListener('click', () => {
+            if (nav.classList.contains('nav--open')) toggleMenu();
+        });
+    });
+
+    /* === Шапка: тень при скролле === */
+    const header = document.getElementById('header');
+    const toTop = document.getElementById('toTop');
+
+    window.addEventListener('scroll', () => {
+        header.classList.toggle('header--scrolled', window.scrollY > 20);
+        toTop.classList.toggle('to-top--visible', window.scrollY > 600);
+    }, { passive: true });
+
+    toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    /* === Анимации появления при скролле (IntersectionObserver) === */
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    /* === Hero-анимация появления (сразу при загрузке) === */
+    window.addEventListener('load', () => {
+        document.querySelectorAll('.reveal-hero').forEach(el => el.classList.add('visible'));
+    });
+
+    /* === Счётчики цифр === */
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            const el = entry.target;
+            counterObserver.unobserve(el);
+            const target = parseInt(el.dataset.count, 10);
+            const duration = 1400;
+            const start = performance.now();
+            function tick(now) {
+                const progress = Math.min((now - start) / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+                el.textContent = Math.round(target * eased);
+                if (progress < 1) requestAnimationFrame(tick);
+            }
+            requestAnimationFrame(tick);
+        });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
+
+    /* === Летающие искры в hero === */
+    const embersBox = document.getElementById('embers');
+    for (let i = 0; i < 18; i++) {
+        const e = document.createElement('span');
+        e.className = 'ember';
+        e.style.left = Math.random() * 100 + '%';
+        e.style.animationDuration = (4 + Math.random() * 6) + 's';
+        e.style.animationDelay = (Math.random() * 6) + 's';
+        e.style.width = e.style.height = (2 + Math.random() * 4) + 'px';
+        embersBox.appendChild(e);
+    }
+
+    /* === Калькулятор стоимости === */
+    const calcWood = document.getElementById('calc-wood');
+    const calcVolume = document.getElementById('calc-volume');
+    const calcDelivery = document.getElementById('calc-delivery');
+    const calcUnload = document.getElementById('calc-unload');
+    const calcTotal = document.getElementById('calc-total');
+    const volumeLabel = document.getElementById('volumeLabel');
+    const bkWood = document.getElementById('bk-wood');
+    const bkDelivery = document.getElementById('bk-delivery');
+    const bkUnload = document.getElementById('bk-unload');
+
+    function fmt(n) { return n.toLocaleString('ru-RU') + ' ₽'; }
+
+    function updateCalc() {
+        const pricePerM3 = parseInt(calcWood.value, 10);
+        let volume = parseInt(calcVolume.value, 10);
+        if (isNaN(volume) || volume < 5) { volume = 5; calcVolume.value = 5; }
+
+        volumeLabel.textContent = volume + ' м³';
+
+        const woodCost = pricePerM3 * volume;
+        const deliveryCost = calcDelivery.checked ? 1500 + 300 * volume : 0;
+        const unloadCost = calcUnload.checked ? 1000 : 0;
+        const total = woodCost + deliveryCost + unloadCost;
+
+        bkWood.textContent = fmt(woodCost);
+        bkDelivery.textContent = deliveryCost ? fmt(deliveryCost) : '—';
+        bkUnload.textContent = unloadCost ? fmt(unloadCost) : '—';
+
+        // Анимация смены итоговой суммы
+        calcTotal.classList.remove('calc-pop');
+        void calcTotal.offsetWidth; // перезапуск анимации
+        calcTotal.classList.add('calc-pop');
+        calcTotal.textContent = fmt(total);
+    }
+
+    [calcWood, calcDelivery, calcUnload].forEach(el => el.addEventListener('change', updateCalc));
+    calcVolume.addEventListener('input', updateCalc);
+    updateCalc();
+
+    /* === Форма заказа: валидация и «отправка» === */
+    const orderForm = document.getElementById('orderForm');
+    const orderSuccess = document.getElementById('orderSuccess');
+
+    function showError(errorId, message, inputEl) {
+        document.getElementById(errorId).textContent = message;
+        inputEl.classList.add('input-error');
+    }
+
+    orderForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        let isValid = true;
+
+        document.querySelectorAll('.form-error').forEach(el => el.textContent = '');
+        document.querySelectorAll('.input-error').forEach(el => el.classList.remove('input-error'));
+
+        const name = document.getElementById('order-name');
+        if (!name.value.trim()) { showError('error-name', 'Пожалуйста, укажите ваше имя', name); isValid = false; }
+
+        const phone = document.getElementById('order-phone');
+        if (!phone.value.trim() || phone.value.replace(/\D/g, '').length < 10) {
+            showError('error-phone', 'Укажите корректный номер телефона', phone); isValid = false;
+        }
+
+        const wood = document.getElementById('order-wood');
+        if (!wood.value) { showError('error-wood', 'Выберите вид дров', wood); isValid = false; }
+
+        const vol = document.getElementById('order-volume');
+        if (!vol.value || parseInt(vol.value, 10) < 5) { showError('error-volume', 'Минимальный объём — 5 м³', vol); isValid = false; }
+
+        if (isValid) {
+            orderForm.style.display = 'none';
+            orderSuccess.style.display = 'block';
+            orderSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+            // Тряска формы при ошибке
+            orderForm.classList.remove('shake');
+            void orderForm.offsetWidth;
+            orderForm.classList.add('shake');
+        }
+    });
+
+    /* === Плавная прокрутка к якорям с учётом шапки === */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            const target = document.querySelector(targetId);
+            if (target) {
+                e.preventDefault();
+                const headerHeight = header.offsetHeight;
+                const top = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 12;
+                window.scrollTo({ top, behavior: 'smooth' });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
